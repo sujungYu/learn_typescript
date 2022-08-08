@@ -87,3 +87,6 @@ function getShoppingItemOption<T extends keyof ShoppingItem>(itemOption: T): T {
     return itemOption;
 }
 getShoppingItemOption("name");
+
+// 실제 애풀리케이션을 개발하는 환경에서는 api를 호출해 와서 api응답의 규칙 혹은 규격을 정의할때 제네릭을 가장 많이 쓴다.
+// quiz/2_address-book/src/index.ts function fetchContacts()
