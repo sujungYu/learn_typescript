@@ -4,7 +4,7 @@ class Person {
     // 2. 변수의 접근 범위 설정 가능
     private name: string; // 이 클래스 안에서만 쓰겠다(private)
     public age: number;
-    readonly log: string; // 읽기만 할 수 있다.
+    readonly log: string; // 읽기만 할 수 있다.(접근만 가능하고 변경은 불가)
 
     constructor(name: string, age: number) { // constructor() - 초기화 매서드
         this.name = name;

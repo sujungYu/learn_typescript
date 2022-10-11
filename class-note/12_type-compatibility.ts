@@ -13,9 +13,9 @@ interface Person {
 let developer: Developer;
 let person: Person;
 // 오른쪽에 있는 타입이 더 많은 속성을 갖거나 구조적으로 더 컸을 때 왼쪽과 호환이 된다.
-// developer = new Person();
-// developer = person;
-// person = developer;
+// developer = new Person(); //X
+// developer = person; // X
+// person = developer; // O
 
 // 함수
 let add = function(a: number) {
@@ -27,7 +27,7 @@ let sum = function(a: number, b: number) {
 
 sum = add;
 // 오른쪽에 있는 함수의 구조가 왼쪽에 있는 함수의 구조보다 더 타입적으로 크기 때문에 호환되지 않는다.
-// add = sum;
+// add = sum; // X
 
 // 제네릭
 interface Empty<T> {
