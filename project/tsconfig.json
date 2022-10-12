@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "allowJs": true, // 폴더안에 있는 js까지 ts가 같이 검증한다.
+        "target": "ES5",
+        "outDir": "./built", // ts에 결과물이 어디에 들어갈건가.
+        "moduleResolution": "Node",
+        "lib": ["ES2015", "DOM", "DOM.Iterable"]
+    },
+    // 프로젝트를 기준으로 해서 어떤 폴더를 대상으로 TS를 컴파일 시킬건가.
+    "include": ["./src/**/*"] // src 폴더 안에 있는 것만 컴파일 하겠다는 의미
+}
